@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload to Google Sheet</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form action="" method="post" autocomplete="off">
+            <h3>Contact Form</h3>
+            <input type="text" placeholder="Full Name" name="Name" required>
+            <input type="tel" placeholder="Phome Number" name="Phone_Number" required>
+            <input type="email" placeholder="Your Email" name="Email" required>
+
+            <select id="cars" name="Education" required>
+                <option value="">Education</option>
+                <option value="hsc">HSC</option>
+                <option value="bcom">BCom</option>
+                <option value="bsc">Bsc</option>
+                <option value="ba">BA</option>
+            </select>
+
+            <div>
+                <h4>Gender</h4>
+                <input type="radio" name="gander" id="">
+                <label for="male">Male</label>
+                <input type="radio" name="gander" id="">
+                <label for="femle">Female</label>
+            </div>
+
+            <textarea name="Text" id="textarea" placeholder="Enter Your Text Here" cols="30" rows="5"></textarea>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
