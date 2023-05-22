@@ -19,6 +19,19 @@ Facebook page = https://www.facebook.com/cyberwarriorsindia
           </script>
 
 
+<script>
+  const scriptURL = '<SCRIPT URL>'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
 =============================================================================
 
 var sheetName = 'Sheet1'
@@ -61,3 +74,8 @@ var sheetName = 'Sheet1'
 			lock.releaseLock()
 		  }
 		}
+
+
+
+        Deployment ID
+        AKfycbycLuokfra5s0xg5S9eIvSvFqwGhwxntPZeg5fIJQ19DhYpLCI5OoqSyrpr1RHys7_k
